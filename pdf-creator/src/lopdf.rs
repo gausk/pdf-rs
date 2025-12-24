@@ -1,13 +1,9 @@
 use anyhow::Result;
-use lopdf::Stream;
 use lopdf::content::{Content, Operation};
-use lopdf::{Document, Object, dictionary};
+use lopdf::dictionary;
+use lopdf::{Document, Object, Stream};
 
 fn create_pdf() -> Result<()> {
-    use lopdf::content::{Content, Operation};
-    use lopdf::dictionary;
-    use lopdf::{Document, Object, Stream};
-
     // `with_version` specifes the PDF version this document complies with.
     let mut doc = Document::with_version("1.5");
     // Object IDs are used for cross referencing in PDF documents.
