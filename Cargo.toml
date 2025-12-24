@@ -5,3 +5,4 @@ members = [
 
 [workspace.dependencies]
 anyhow = "1.0.100"
+lopdf = "0.38.0"
